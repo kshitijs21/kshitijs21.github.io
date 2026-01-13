@@ -22,7 +22,7 @@
 <h1>Kshitij Sinha</h1>
 
 <p>
-I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). My research is mainly focused on studing the Homogenization of PDEs. Currently, I am trying to study the spectral problems in periodic perforated domains. For which I am also trying to do the numerical study using the Layer potentials.
+I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). My research is mainly focused on studing the Homogenization of PDEs. Currently, I am trying to study the spectral problems in periodic perforated domains. For which I am also trying to do the numerical study using the Layer potentials. Here is my <a href="CV_Kshitij.pdf"> CV</a>
 </p>
 
 <h2>Academic Background</h2>
@@ -45,6 +45,12 @@ I am a PhD student in Mathematics at Department of Mathematics, Indian Institute
 <ul>
   <li>Kshitij Sinha, Quantitative periodic homogenization of parabolic equations with large drift and potential, preprint https://arxiv.org/abs/2509.22003v3</li>
 </ul>
+
+<h2>Contact</h2>
+<p>
+Email: 23d0781@iitb.ac.in <br>
+GitHub: <a href="https://github.com/kshitijs21">kshitijs21</a>
+</p>
 
 </body>
 </html>
