@@ -108,18 +108,58 @@
     </ul>
     
   </section>
-
-    <!-- Hobbies -->
+  
+<!-- SEMINARS, CONFERENCES ATTENDED -->
   <section class="section">
-    <h2>Extra-curriculars</h2>
+    <h2>Seminars, Conferences Attended</h2>
     <ul>
-    <li>Cultural Secretary of Hostel 14, IIT Bombay. As a cultural secretary my job is to organise cultural events for the hostek community.</li>
-    <li>Anime. Suggestions: Assassination Classroom, Demon Slayer, Death Note.</li>
-    <li>Bollywood. Suggestions: Dhurandhar, Chennai Express, Piku.</li>
+    <li>
+      <strong>NCMW - A Contemporary Course on Elliptic Partial Differential Equations,</strong>
+      Organized by Professor Ali Hyder(TIFR-CAM) and Professor Debabrata Karmakar(TIFR-CAM) at TIFR - Center
+for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
+    </li>
+      <li>
+      <strong>Quantitative theory of Homogenization,</strong>
+      Organized by Professor Harsha Hutridurga(IIT-B) and Professor S. Sivaji Ganesh(IIT-B) at IIT Bombay(17 Feb ’25 - 22 Feb’25)
+    </li>
+      <li>
+      <strong>Stochastic Processes and Related Topics 2025,</strong>
+      Organized by Professor Chetan D. Pahlajani(IIT-Gandhinagar) at IIT Gandhinagar(13 Sep ’25 - 15 Sep’25)
+    </li>
     </ul>
-    
   </section>
 
+
+  <!-- TALKS GIVEN -->
+  <section class="section">
+    <h2>Talks Given</h2>
+    <ul>
+    <li>
+      <strong>Quantitative theory of Homogenization,</strong>
+      Doctoral Course(5:30 hours) on the Quantitative aspects of Homogenization of Elliptic Partial Differential equations in periodic settings(20 May ’24 - 01 Jun’24)
+    </li>
+      <li>
+      <strong>Stochastic Processes and Related Topics 2025,</strong>
+      Talk on Quantitative periodic homogenization of parabolic equations with large drift and potential(13 Sep ’25 - 15 Sep’25)
+    </li>
+    </ul>
+  </section>
+
+   <!-- TEACHING EXPERIENCE -->
+  <section class="section">
+    <h2>Teaching Experience</h2>
+    <ul>
+    <li>
+      <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
+    </li>
+      <li>
+      <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
+    </li>
+    </ul>
+  </section>
+
+
+  
   <!-- Contact -->
   <section class="section contact-info">
     <h2>Contact</h2>
