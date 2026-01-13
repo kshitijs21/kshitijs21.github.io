@@ -71,78 +71,77 @@
 
   <!-- About / Description -->
   <section class="section">
-    <h2>About Me</h2>
-    <p>
-     I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
-      <p>
-        <p>
-      My research is mainly focused on studing the Homogenization of PDEs. Currently, I am trying to study the spectral problems in periodically perforated domains. I am also trying to do the numerical study of the same using the Layer potentials
-    </p>
+  <h2>About Me</h2>
+  <p>
+    I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
+  <p>
+  <p>
+    My research is mainly focused on studing the Homogenization of PDEs. Currently, I am trying to study the spectral problems in periodically perforated domains. I am also trying to do       the numerical study of the same using the Layer potentials
+  </p>
   </section>
 
   <!-- Academic Background -->
   <section class="section">
-    <h2>Academic Background</h2>
-   <ul>
-  <li><strong>PhD in Mathematics</strong>, IIT Bombay (2023–present)</li>
-  <li><strong>MSc in Mathematics</strong>, IIT Kanpur (2020–2022)</li>
-  <li><strong>BSc in Mathematics</strong>, Banaras Hindu University(BHU), Varanasi (2017–2020)</li>
-</ul>
+  <h2>Academic Background</h2>
+  <ul>
+    <li><strong>PhD in Mathematics</strong>, IIT Bombay (2023–present)</li>
+    <li><strong>MSc in Mathematics</strong>, IIT Kanpur (2020–2022)</li>
+    <li><strong>BSc in Mathematics</strong>, Banaras Hindu University(BHU), Varanasi (2017–2020)</li>
+  </ul>
 
   </section>
 
   <!-- Research Interests -->
   <section class="section">
-    <h2>Research Interests</h2>
-    <ul>
-  <li>Homogenization of PDEs</li>
-  <li>Numerical Analysis</li>
-</ul>
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Homogenization of PDEs</li>
+    <li>Numerical Analysis</li>
+  </ul>
   </section>
 
   <!-- Publications -->
   <section class="section">
-    <h2>Publications</h2>
-    <ul>
+  <h2>Publications</h2>
+  <ul>
     <li>Kshitij Sinha, Quantitative periodic homogenization of parabolic equations with large drift and potential, preprint available at https://arxiv.org/abs/2509.22003v3</li>
-    </ul>
-    
+  </ul>
   </section>
   
 <!-- SEMINARS, CONFERENCES ATTENDED -->
   <section class="section">
-    <h2>Seminars, Conferences Attended</h2>
-    <ul>
-    <li>
-      <strong>NCMW - A Contemporary Course on Elliptic Partial Differential Equations,</strong>
-      Organized by Professor Ali Hyder(TIFR-CAM) and Professor Debabrata Karmakar(TIFR-CAM) at TIFR - Center
-for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
-    </li>
-      <li>
-      <strong>Quantitative theory of Homogenization,</strong>
-      Organized by Professor Harsha Hutridurga(IIT-B) and Professor S. Sivaji Ganesh(IIT-B) at IIT Bombay(17 Feb ’25 - 22 Feb’25)
-    </li>
-      <li>
-      <strong>Stochastic Processes and Related Topics 2025,</strong>
-      Organized by Professor Chetan D. Pahlajani(IIT-Gandhinagar) at IIT Gandhinagar(13 Sep ’25 - 15 Sep’25)
-    </li>
-    </ul>
+  <h2>Seminars, Conferences Attended</h2>
+  <ul>
+  <li>
+    <strong>NCMW - A Contemporary Course on Elliptic Partial Differential Equations,</strong>
+    Organized by Professor Ali Hyder(TIFR-CAM) and Professor Debabrata Karmakar(TIFR-CAM) at TIFR - Center
+    for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
+  </li>
+  <li>
+    <strong>Quantitative theory of Homogenization,</strong>
+    Organized by Professor Harsha Hutridurga(IIT-B) and Professor S. Sivaji Ganesh(IIT-B) at IIT Bombay(17 Feb ’25 - 22 Feb’25)
+  </li>
+  <li>
+    <strong>Stochastic Processes and Related Topics 2025,</strong>
+    Organized by Professor Chetan D. Pahlajani(IIT-Gandhinagar) at IIT Gandhinagar(13 Sep ’25 - 15 Sep’25)
+  </li>
+  </ul>
   </section>
 
 
   <!-- TALKS GIVEN -->
   <section class="section">
-    <h2>Talks Given</h2>
-    <ul>
-    <li>
-      <strong>Quantitative theory of Homogenization,</strong>
-      Doctoral Course(5:30 hours) on the Quantitative aspects of Homogenization of Elliptic Partial Differential equations in periodic settings(20 May ’24 - 01 Jun’24)
-    </li>
-      <li>
-      <strong>Stochastic Processes and Related Topics 2025,</strong>
-      Talk on Quantitative periodic homogenization of parabolic equations with large drift and potential(13 Sep ’25 - 15 Sep’25)
-    </li>
-    </ul>
+  <h2>Talks Given</h2>
+  <ul>
+  <li>
+    <strong>Quantitative theory of Homogenization,</strong>
+    Doctoral Course(5:30 hours) on the Quantitative aspects of Homogenization of Elliptic Partial Differential equations in periodic settings(20 May ’24 - 01 Jun’24)
+  </li>
+  <li>
+    <strong>Stochastic Processes and Related Topics 2025,</strong>
+    Talk on Quantitative periodic homogenization of parabolic equations with large drift and potential(13 Sep ’25 - 15 Sep’25)
+  </li>
+  </ul>
   </section>
 
    <!-- TEACHING EXPERIENCE -->
@@ -152,7 +151,7 @@ for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
     <li>
       <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
     </li>
-      <li>
+    <li>
       <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
     </li>
     </ul>
