@@ -109,6 +109,17 @@
     
   </section>
 
+    <!-- Hobbies -->
+  <section class="section">
+    <h2>Extra-curriculars</h2>
+    <ul>
+    <li>Cultural Secretary of Hostel 14, IIT Bombay. As a cultural secretary my job is to organise cultural events for the hostek community.</li>
+    <li>Anime. Suggestions: Assassination Classroom, Demon Slayer, Death Note.</li>
+    <li>Bollywood. Suggestions: Dhurandhar, Chennai Express, Piku.</li>
+    </ul>
+    
+  </section>
+
   <!-- Contact -->
   <section class="section contact-info">
     <h2>Contact</h2>
