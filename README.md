@@ -164,7 +164,7 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:23d0781@iitb.ac.in">23d0781@iitb.ac.in</a></p>
     <p>GitHub: <a href="https://github.com/kshitijs21">github.com/kshitijs21</a></p>
-    <p><a href="CV_Kshitij.pdf" class="cv-link">Download CV</a></p>
+    <p><a href="CV_Kshitij.pdf" class="cv-link">CV</a></p>
   </section>
 
 </body>
