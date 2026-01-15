@@ -1,171 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kshitij Sinha – Academic Profile</title>
+# Academic Pages
+**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
-  <!-- Simple CSS for clean academic style -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #333;
-      padding: 0 20px;
-      background-color: #fefefe;
-    }
-    h1, h2, h3 {
-      color: #1a1a1a;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 5px;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contact-info p {
-      margin: 5px 0;
-    }
-    .cv-link {
-      display: inline-block;
-      margin-top: 5px;
-      padding: 5px 10px;
-      background-color: #1a73e8;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .cv-link:hover {
-      background-color: #1558b0;
-    }
-  </style>
-</head>
+![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
 
-<body>
+# Getting Started
 
-  <!-- Header / Name -->
-  <header class="section">
-    <h1>Kshitij Sinha</h1>
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Click the "Use this template" button in the top right.
+1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
+1. Set site-wide configuration and add your content.
+1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
+1. Check status by going to the repository settings, in the "GitHub pages" section
+1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+
+See more info at https://academicpages.github.io/
+
+## Running locally
+
+When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+
+1. Clone the repository and made updates as detailed above.
+
+### Using a different IDE
+1. Make sure you have ruby-dev, bundler, and nodejs installed
     
-  </header>
+    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    ```bash
+    sudo apt install ruby-dev ruby-bundler nodejs
+    ```
+    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
+    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
 
-  <!-- About / Description -->
-  <section class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
-  <p>
-  <p>
-    My research is mainly focused on studing the Homogenization of PDEs. Currently, I am trying to study the spectral problems in periodically perforated domains. I am also trying to do       the numerical study of the same using the Layer potentials
-  </p>
-  </section>
+    On MacOS the commands are:
+    ```bash
+    brew install ruby
+    brew install node
+    gem install bundler
+    ```
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 
-  <!-- Academic Background -->
-  <section class="section">
-  <h2>Academic Background</h2>
-  <ul>
-    <li><strong>PhD in Mathematics</strong>, IIT Bombay (2023–present)</li>
-    <li><strong>MSc in Mathematics</strong>, IIT Kanpur (2020–2022)</li>
-    <li><strong>BSc in Mathematics</strong>, Banaras Hindu University(BHU), Varanasi (2017–2020)</li>
-  </ul>
+    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
+    Install Gems Locally (Recommended):
+    ```bash
+    bundle config set --local path 'vendor/bundle'
+    ```
+    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
 
-  </section>
+1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
+    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
 
-  <!-- Research Interests -->
-  <section class="section">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Homogenization of PDEs</li>
-    <li>Numerical Analysis</li>
-  </ul>
-  </section>
+If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
-  <!-- Publications -->
-  <section class="section">
-  <h2>Publications</h2>
-  <ul>
-    <li>Kshitij Sinha, Quantitative periodic homogenization of parabolic equations with large drift and potential, preprint available at https://arxiv.org/abs/2509.22003v3</li>
-  </ul>
-  </section>
-  
-<!-- SEMINARS, CONFERENCES ATTENDED -->
-  <section class="section">
-  <h2>Seminars, Conferences Attended</h2>
-  <ul>
-  <li>
-    <strong>NCMW - A Contemporary Course on Elliptic Partial Differential Equations,</strong>
-    Organized by Professor Ali Hyder(TIFR-CAM) and Professor Debabrata Karmakar(TIFR-CAM) at TIFR - Center
-    for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
-  </li>
-  <li>
-    <strong>Quantitative theory of Homogenization,</strong>
-    Organized by Professor Harsha Hutridurga(IIT-B) and Professor S. Sivaji Ganesh(IIT-B) at IIT Bombay(17 Feb ’25 - 22 Feb’25)
-  </li>
-  <li>
-    <strong>Stochastic Processes and Related Topics 2025,</strong>
-    Organized by Professor Chetan D. Pahlajani(IIT-Gandhinagar) at IIT Gandhinagar(13 Sep ’25 - 15 Sep’25)
-  </li>
-  </ul>
-  </section>
+## Using Docker
 
+Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
 
-  <!-- TALKS GIVEN -->
-  <section class="section">
-  <h2>Talks Given</h2>
-  <ul>
-  <li>
-    <strong>Quantitative theory of Homogenization,</strong>
-    Doctoral Course(5:30 hours) on the Quantitative aspects of Homogenization of Elliptic Partial Differential equations in periodic settings(20 May ’24 - 01 Jun’24)
-  </li>
-  <li>
-    <strong>Stochastic Processes and Related Topics 2025,</strong>
-    Talk on Quantitative periodic homogenization of parabolic equations with large drift and potential(13 Sep ’25 - 15 Sep’25)
-  </li>
-  </ul>
-  </section>
+You can build and execute the container by running the following command in the repository:
 
-   <!-- TEACHING EXPERIENCE -->
-  <section class="section">
-    <h2>Teaching Experience</h2>
-    <ul>
-    <li>
-      <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
-    </li>
-    <li>
-      <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
-    </li>
-    </ul>
-  </section>
+```bash
+chmod -R 777 .
+docker compose up
+```
 
+You should now be able to access the website from `localhost:4000`.
 
-  
-  <!-- Contact -->
-  <section class="section contact-info">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:23d0781@iitb.ac.in">23d0781@iitb.ac.in</a></p>
-    <p>GitHub: <a href="https://github.com/kshitijs21">github.com/kshitijs21</a></p>
-    <p><a href="CV_Kshitij.pdf" class="cv-link">CV</a></p>
-  </section>
+### Using the DevContainer in VS Code
 
-</body>
-</html>
+If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+
+# Maintenance
+
+Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+
+This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+
+## Bugfixes and enhancements
+
+If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+
+Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+
+---
+<div align="center">
+    
+![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
+[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+
+[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
+[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
+</div>
