@@ -149,10 +149,10 @@
     <h2>Teaching Experience</h2>
     <ul>
     <li>
-      <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
+      <strong>MA515 : Partial Differential Equations</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
     </li>
     <li>
-      <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
+      <strong>SI416 : Optimization</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
     </li>
     </ul>
   </section>
