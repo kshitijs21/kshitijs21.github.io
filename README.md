@@ -76,7 +76,7 @@
     I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
   <p>
   <p>
-    My research is mainly focused on the Homogenization of PDEs. Currently, I am studying the spectral problems in periodically perforated domains. I am also trying to do the numerical study of the same using the Layer Potentials.
+    My research primarily focuses on the field of Homogenization Theory within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains. In addition, I am engaged in the numerical analysis of these problems using Boundary Integral Equations.
   </p>
   </section>
 
