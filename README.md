@@ -76,7 +76,7 @@
     I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
   <p>
   <p>
-    My research primarily focuses on the field of Homogenization Theory within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains. In addition, I am engaged in the numerical analysis of these problems using Boundary Integral Equations.
+   My research primarily focuses on the field of Homogenization Theory within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains. In addition, I am engaged in the numerical analysis of these problems using Boundary Integral Equations.
   </p>
   </section>
 
@@ -104,9 +104,9 @@
   <section class="section">
   <h2>Publications</h2>
   <ul>
-    <li>Kshitij Sinha. Quantitative periodic homogenization of parabolic equations with large drift and potential, accepted in DCDS-B</li>
+    <li>Kshitij Sinha. Quantitative periodic homogenization of parabolic equations with large drift and potential, accepted in DCDS-B (arXiv: <a href="https://doi.org/10.48550/arXiv.2509.22003">2509.22003</a>) </li>
   </ul>
-    <ul>
+  <ul>
     <li>Saumyajit Das, Kshitij Sinha. Homogenization of Three Species Reaction Diffusion Equation in Perforated Domains, preprint available at <a href="https://arxiv.org/abs/2603.26927">2603.26927</a></li>
   </ul>
   </section>
@@ -152,10 +152,10 @@
     <h2>Teaching Experience</h2>
     <ul>
     <li>
-      <strong>MA515 : Partial Differential Equations</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
+      <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
     </li>
     <li>
-      <strong>SI416 : Optimization</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
+      <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
     </li>
     </ul>
   </section>
@@ -166,6 +166,7 @@
   <section class="section contact-info">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:23d0781@iitb.ac.in">23d0781@iitb.ac.in</a></p>
+    <p>Gmail: <a href="mailto:sinhakshitij377@gmail.com">sinhakshitij377@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/kshitijs21">github.com/kshitijs21</a></p>
     <p><a href="CV_Kshitij.pdf" class="cv-link">CV</a></p>
   </section>
