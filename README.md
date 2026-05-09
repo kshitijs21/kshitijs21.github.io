@@ -104,7 +104,7 @@
   <section class="section">
   <h2>Publications</h2>
   <ul>
-    <li>Kshitij Sinha. Quantitative periodic homogenization of parabolic equations with large drift and potential, preprint available at https://arxiv.org/abs/2509.22003v3</li>
+    <li>Kshitij Sinha. Quantitative periodic homogenization of parabolic equations with large drift and potential, accepted in DCDS-B</li>
   </ul>
     <ul>
     <li>Saumyajit Das, Kshitij Sinha. Homogenization of Three Species Reaction Diffusion Equation in Perforated Domains, preprint available at <a href="https://arxiv.org/abs/2603.26927">2603.26927</a></li>
