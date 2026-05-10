@@ -1,175 +1,883 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kshitij Sinha – Academic Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kshitij Sinha – Mathematics, IIT Bombay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Simple CSS for clean academic style -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #333;
-      padding: 0 20px;
-      background-color: #fefefe;
-    }
-    h1, h2, h3 {
-      color: #1a1a1a;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 2.2em;
-      margin-bottom: 5px;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contact-info p {
-      margin: 5px 0;
-    }
-    .cv-link {
-      display: inline-block;
-      margin-top: 5px;
-      padding: 5px 10px;
-      background-color: #1a73e8;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .cv-link:hover {
-      background-color: #1558b0;
-    }
-  </style>
+  :root {
+    --ink: #1c1a17;
+    --ink-muted: #6b6760;
+    --ink-faint: #a8a49e;
+    --bg: #f7f5f0;
+    --bg-warm: #efebd8;
+    --bg-card: #faf9f6;
+    --accent: #2d5a8e;
+    --accent-light: #dde8f4;
+    --accent-dark: #1a3e66;
+    --rule: #d8d3c7;
+    --gold: #a07a30;
+    --gold-light: #f5edd8;
+    --serif: 'EB Garamond', Georgia, serif;
+    --mono: 'DM Mono', monospace;
+    --sans: 'Outfit', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--serif);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+  .nav-brand {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: 0.04em;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ink-muted);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 88vh;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero-left {
+    padding: 6rem 4rem 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--rule);
+    position: relative;
+  }
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+  }
+  .hero-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  .hero-name {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+  }
+  .hero-name em {
+    display: block;
+    font-style: italic;
+    color: var(--accent);
+  }
+  .hero-desc {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    max-width: 460px;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-ghost {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    background: transparent;
+    color: var(--ink-muted);
+    border: 1px solid var(--rule);
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--ink-muted); color: var(--ink); }
+
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 6rem 4rem;
+    background: var(--bg-warm);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-right::before {
+    content: '∂';
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    font-size: 340px;
+    color: rgba(163,139,88,0.08);
+    font-family: var(--serif);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: auto;
+  }
+  .stat-cell {
+    background: var(--bg-warm);
+    padding: 1.5rem;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+  .stat-label {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .affil-block {
+    margin-bottom: 3rem;
+  }
+  .affil-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 3px 10px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+  }
+  .affil-name {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    font-weight: 300;
+  }
+
+  /* ── SECTION SHELL ── */
+  section {
+    padding: 5rem 6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .section-rule {
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+    margin-left: 0.5rem;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .about-body {
+    padding: 5rem 0 5rem 6rem;
+    border-right: 1px solid var(--rule);
+    padding-right: 4rem;
+  }
+  .about-body .section-header { margin-bottom: 2rem; }
+  .about-text {
+    font-size: 1.05rem;
+    color: var(--ink);
+    line-height: 1.9;
+  }
+  .about-text p + p { margin-top: 1.2rem; }
+  .about-sidebar {
+    padding: 5rem 6rem 5rem 0;
+  }
+  .interest-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  .interest-list li {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .interest-list li::before {
+    content: '→';
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  /* ── EDUCATION ── */
+  #education { padding: 5rem 6rem; }
+  .edu-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  .edu-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--rule);
+  }
+  .edu-item {
+    position: relative;
+    padding: 2rem 0 2rem 2.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .edu-item:last-child { border-bottom: none; }
+  .edu-item::before {
+    content: '';
+    position: absolute;
+    left: -4.5px;
+    top: 2.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1.5px solid var(--accent);
+  }
+  .edu-deg {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .edu-inst {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+  }
+  .edu-year {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── PUBLICATIONS ── */
+  #publications { padding: 5rem 6rem; background: var(--bg-card); }
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .pub-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    transition: border-left-color 0.2s, transform 0.2s;
+  }
+  .pub-card:hover {
+    border-left-color: var(--gold);
+    transform: translateX(4px);
+  }
+  .pub-index {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding-top: 2px;
+  }
+  .pub-title {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+  }
+  .pub-meta {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.6rem;
+  }
+  .pub-badge {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    margin-right: 6px;
+  }
+  .badge-accepted {
+    background: #ddf0e4;
+    color: #1d6b3e;
+  }
+  .badge-preprint {
+    background: var(--gold-light);
+    color: var(--gold);
+  }
+  .pub-link {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+  .pub-link:hover { text-decoration: underline; }
+
+  /* ── TALKS & CONFERENCES ── */
+  #activities { padding: 5rem 6rem; }
+  .activities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .activity-col-title {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .activity-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .activity-item {
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    transition: border-left-color 0.2s;
+  }
+  .activity-item:hover { border-left-color: var(--accent); }
+  .activity-title {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+  }
+  .activity-org {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.2rem;
+  }
+  .activity-date {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── TEACHING ── */
+  #teaching { padding: 5rem 6rem; background: var(--bg-warm); }
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .course-card {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+  .course-code {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+  }
+  .course-name {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .course-sem {
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-faint);
+  }
+
+  /* ── CONTACT ── */
+  #contact { padding: 5rem 6rem; }
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+  .contact-text {
+    font-size: 1rem;
+    color: var(--ink-muted);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  .contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .contact-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+  }
+  .contact-key {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    min-width: 60px;
+  }
+  .contact-val { color: var(--ink); }
+  .contact-val a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .contact-val a:hover { text-decoration: underline; }
+  .cv-download {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--accent);
+    padding: 12px 28px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cv-download:hover { background: var(--accent-dark); }
+  .contact-decoration {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    padding: 2.5rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-faint);
+    line-height: 2;
+    letter-spacing: 0.03em;
+  }
+  .contact-decoration .math-line { color: var(--accent); }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--rule);
+  }
+  footer p {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 900px) {
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 4rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule); }
+    .hero-left::before { left: 1.5rem; }
+    .hero-right { padding: 3rem 1.5rem; }
+    #about { grid-template-columns: 1fr; }
+    .about-body { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule); }
+    .about-sidebar { padding: 3rem 1.5rem; }
+    section, #education, #publications, #activities, #teaching, #contact { padding: 3rem 1.5rem; }
+    .activities-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+    footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
 </head>
-
 <body>
 
-  <!-- Header / Name -->
-  <header class="section">
-    <h1>Kshitij Sinha</h1>
-    
-  </header>
-
-  <!-- About / Description -->
-  <section class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a PhD student in Mathematics at Department of Mathematics, Indian Institute of Technology Bombay(IIT Bombay). 
-  <p>
-  <p>
-   My research primarily focuses on the field of Homogenization Theory within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains. In addition, I am engaged in the numerical analysis of these problems using Boundary Integral Equations.
-  </p>
-  </section>
-
-  <!-- Academic Background -->
-  <section class="section">
-  <h2>Academic Background</h2>
-  <ul>
-    <li><strong>PhD in Mathematics</strong>, IIT Bombay (2023–present)</li>
-    <li><strong>MSc in Mathematics</strong>, IIT Kanpur (2020–2022)</li>
-    <li><strong>BSc in Mathematics</strong>, Banaras Hindu University(BHU), Varanasi (2017–2020)</li>
+<nav>
+  <span class="nav-brand">K. Sinha — IIT Bombay</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#publications">Research</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
+</nav>
 
-  </section>
+<!-- ── HERO ── -->
+<div class="hero">
+  <div class="hero-left">
+    <span class="hero-label">PhD Researcher · Mathematics</span>
+    <h1 class="hero-name">
+      Kshitij<br>
+      <em>Sinha</em>
+    </h1>
+    <p class="hero-desc">
+      Working at the intersection of homogenization theory, spectral analysis in perforated domains, and numerical methods via boundary integral equations.
+    </p>
+    <div class="hero-actions">
+      <a href="#publications" class="btn-primary">View Research</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="affil-block">
+      <div class="affil-tag">IIT Bombay — Dept. of Mathematics</div>
+      <p class="affil-name">Indian Institute of Technology Bombay</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-cell">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Publication</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Preprint</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Invited Talks</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Conferences</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Research Interests -->
-  <section class="section">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Homogenization of PDEs</li>
-    <li>Numerical Analysis</li>
-  </ul>
-  </section>
-
-  <!-- Publications -->
-  <section class="section">
-  <h2>Publications</h2>
-  <ul>
-    <li>Kshitij Sinha. Quantitative periodic homogenization of parabolic equations with large drift and potential, accepted in DCDS-B (arXiv: <a href="https://doi.org/10.48550/arXiv.2509.22003">2509.22003</a>) </li>
-  </ul>
-  <ul>
-    <li>Saumyajit Das, Kshitij Sinha. Homogenization of Three Species Reaction Diffusion Equation in Perforated Domains, preprint available at <a href="https://arxiv.org/abs/2603.26927">2603.26927</a></li>
-  </ul>
-  </section>
-  
-<!-- SEMINARS, CONFERENCES ATTENDED -->
-  <section class="section">
-  <h2>Seminars, Conferences Attended</h2>
-  <ul>
-  <li>
-    <strong>NCMW - A Contemporary Course on Elliptic Partial Differential Equations,</strong>
-    Organized by Professor Ali Hyder(TIFR-CAM) and Professor Debabrata Karmakar(TIFR-CAM) at TIFR - Center
-    for Applicable Mathematics(CAM), Bengaluru(20 May ’24 - 01 Jun’24)
-  </li>
-  <li>
-    <strong>Quantitative theory of Homogenization,</strong>
-    Organized by Professor Harsha Hutridurga(IIT-B) and Professor S. Sivaji Ganesh(IIT-B) at IIT Bombay(17 Feb ’25 - 22 Feb’25)
-  </li>
-  <li>
-    <strong>Stochastic Processes and Related Topics 2025,</strong>
-    Organized by Professor Chetan D. Pahlajani(IIT-Gandhinagar) at IIT Gandhinagar(13 Sep ’25 - 15 Sep’25)
-  </li>
-  </ul>
-  </section>
-
-
-  <!-- TALKS GIVEN -->
-  <section class="section">
-  <h2>Talks Given</h2>
-  <ul>
-  <li>
-    <strong>Quantitative theory of Homogenization,</strong>
-    Doctoral Course(5:30 hours) on the Quantitative aspects of Homogenization of Elliptic Partial Differential equations in periodic settings(20 May ’24 - 01 Jun’24)
-  </li>
-  <li>
-    <strong>Stochastic Processes and Related Topics 2025,</strong>
-    Talk on Quantitative periodic homogenization of parabolic equations with large drift and potential(13 Sep ’25 - 15 Sep’25)
-  </li>
-  </ul>
-  </section>
-
-   <!-- TEACHING EXPERIENCE -->
-  <section class="section">
-    <h2>Teaching Experience</h2>
-    <ul>
-    <li>
-      <strong>MA515 : Partial Differential Equations,</strong>(Aug’24-Dec’24 & Aug’25 - Dec’25)
-    </li>
-    <li>
-      <strong>SI416 : Optimization,</strong>(Jan’25-Apr’25 & Jan’26-Apr’26)
-    </li>
+<!-- ── ABOUT ── -->
+<div id="about">
+  <div class="about-body">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-text">
+      <p>
+        I am a PhD student in Mathematics at the Department of Mathematics, Indian Institute of Technology Bombay. My doctoral work is situated at a rich boundary between pure analysis and applied mathematics.
+      </p>
+      <p>
+        My research primarily focuses on <em>Homogenization Theory</em> within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains — structures that appear naturally in composite materials, porous media, and biological tissues.
+      </p>
+      <p>
+        In parallel, I am engaged in the numerical analysis of these problems using <em>Boundary Integral Equations</em>, bridging the analytical and computational dimensions of the field.
+      </p>
+    </div>
+  </div>
+  <div class="about-sidebar">
+    <p style="font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; margin-top: 5rem;">Research Interests</p>
+    <ul class="interest-list">
+      <li>Homogenization of PDEs</li>
+      <li>Spectral Problems in Perforated Domains</li>
+      <li>Boundary Integral Equations</li>
+      <li>Numerical Analysis</li>
+      <li>Parabolic Equations with Drift</li>
     </ul>
-  </section>
+  </div>
+</div>
 
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="edu-timeline">
+    <div class="edu-item">
+      <div class="edu-deg">PhD in Mathematics</div>
+      <div class="edu-inst">Indian Institute of Technology Bombay</div>
+      <div class="edu-year">2023 — Present</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">MSc in Mathematics</div>
+      <div class="edu-inst">Indian Institute of Technology Kanpur</div>
+      <div class="edu-year">2020 — 2022</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-deg">BSc in Mathematics</div>
+      <div class="edu-inst">Banaras Hindu University, Varanasi</div>
+      <div class="edu-year">2017 — 2020</div>
+    </div>
+  </div>
+</section>
 
-  
-  <!-- Contact -->
-  <section class="section contact-info">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:23d0781@iitb.ac.in">23d0781@iitb.ac.in</a></p>
-    <p>Gmail: <a href="mailto:sinhakshitij377@gmail.com">sinhakshitij377@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/kshitijs21">github.com/kshitijs21</a></p>
-    <p><a href="CV_Kshitij.pdf" class="cv-link">CV</a></p>
-  </section>
+<!-- ── PUBLICATIONS ── -->
+<section id="publications">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Publications</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="pub-list">
+    <div class="pub-card">
+      <span class="pub-index">[1]</span>
+      <div>
+        <p class="pub-title">Quantitative periodic homogenization of parabolic equations with large drift and potential</p>
+        <p class="pub-meta">Kshitij Sinha</p>
+        <span class="pub-badge badge-accepted">Accepted · DCDS-B</span>
+        <a href="https://doi.org/10.48550/arXiv.2509.22003" class="pub-link">arXiv:2509.22003 ↗</a>
+      </div>
+    </div>
+    <div class="pub-card">
+      <span class="pub-index">[2]</span>
+      <div>
+        <p class="pub-title">Homogenization of Three Species Reaction Diffusion Equation in Perforated Domains</p>
+        <p class="pub-meta">Saumyajit Das, Kshitij Sinha</p>
+        <span class="pub-badge badge-preprint">Preprint</span>
+        <a href="https://arxiv.org/abs/2603.26927" class="pub-link">arXiv:2603.26927 ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ACTIVITIES ── -->
+<section id="activities">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Talks & Conferences</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="activities-grid">
+    <div>
+      <p class="activity-col-title">Talks Given</p>
+      <div class="activity-items">
+        <div class="activity-item">
+          <p class="activity-title">Quantitative aspects of Homogenization of Elliptic PDEs in Periodic Settings</p>
+          <p class="activity-org">Doctoral Course (5.5 hrs) — Quantitative Theory of Homogenization Workshop, IIT Bombay</p>
+          <p class="activity-date">Feb 2025</p>
+        </div>
+        <div class="activity-item">
+          <p class="activity-title">Quantitative periodic homogenization of parabolic equations with large drift and potential</p>
+          <p class="activity-org">Stochastic Processes and Related Topics 2025 — IIT Gandhinagar</p>
+          <p class="activity-date">Sep 2025</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="activity-col-title">Conferences & Schools Attended</p>
+      <div class="activity-items">
+        <div class="activity-item">
+          <p class="activity-title">NCMW — A Contemporary Course on Elliptic PDEs</p>
+          <p class="activity-org">TIFR–CAM, Bengaluru · Organized by Ali Hyder & Debabrata Karmakar</p>
+          <p class="activity-date">May–Jun 2024</p>
+        </div>
+        <div class="activity-item">
+          <p class="activity-title">Quantitative Theory of Homogenization</p>
+          <p class="activity-org">IIT Bombay · Organized by Harsha Hutridurga & S. Sivaji Ganesh</p>
+          <p class="activity-date">Feb 2025</p>
+        </div>
+        <div class="activity-item">
+          <p class="activity-title">Stochastic Processes and Related Topics 2025</p>
+          <p class="activity-org">IIT Gandhinagar · Organized by Chetan D. Pahlajani</p>
+          <p class="activity-date">Sep 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEACHING ── -->
+<section id="teaching">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Teaching Experience</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="teaching-grid">
+    <div class="course-card">
+      <span class="course-code">MA515</span>
+      <p class="course-name">Partial Differential Equations</p>
+      <p class="course-sem">Aug–Dec 2024 &amp; Aug–Dec 2025</p>
+    </div>
+    <div class="course-card">
+      <span class="course-code">SI416</span>
+      <p class="course-name">Optimization</p>
+      <p class="course-sem">Jan–Apr 2025 &amp; Jan–Apr 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="contact-inner">
+    <div>
+      <p class="contact-text">
+        I am open to discussions on homogenization theory, PDE analysis, numerical methods, and collaborative research. Feel free to reach out via email.
+      </p>
+      <div class="contact-items">
+        <div class="contact-row">
+          <span class="contact-key">IIT Mail</span>
+          <span class="contact-val"><a href="mailto:23d0781@iitb.ac.in">23d0781@iitb.ac.in</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">Gmail</span>
+          <span class="contact-val"><a href="mailto:sinhakshitij377@gmail.com">sinhakshitij377@gmail.com</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">GitHub</span>
+          <span class="contact-val"><a href="https://github.com/kshitijs21" target="_blank">github.com/kshitijs21</a></span>
+        </div>
+      </div>
+      <a href="CV_Kshitij.pdf" class="cv-download">Download CV ↓</a>
+    </div>
+    <div class="contact-decoration">
+      <div class="math-line">∂ₜu − Δu + b·∇u + cu = f</div>
+      <div>&nbsp;&nbsp;in Ω × (0,T)</div>
+      <br>
+      <div class="math-line">u(x,t) = u(x + εe_i, t)</div>
+      <div>&nbsp;&nbsp;periodic in x</div>
+      <br>
+      <div class="math-line">u^ε ⇀ u₀ &nbsp;in H¹(Ω)</div>
+      <div>&nbsp;&nbsp;as ε → 0</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Kshitij Sinha — Department of Mathematics, IIT Bombay</p>
+  <p>PhD Researcher · Homogenization Theory · PDEs</p>
+</footer>
 
 </body>
 </html>
