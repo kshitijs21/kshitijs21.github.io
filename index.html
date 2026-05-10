@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kshitij Sinha – Mathematics, IIT Bombay</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&family=Noto+Sans+Devanagari:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -227,8 +227,8 @@
   .hero-right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 5rem 4rem;
+    justify-content: flex-end;
+    padding: 6rem 4rem;
     background: var(--bg-warm);
     position: relative;
     overflow: hidden;
@@ -514,6 +514,7 @@
 <nav>
   <button class="nav-brand" onclick="showPage('home')">K. Sinha</button>
   <ul class="nav-links">
+    <li><button onclick="showPage('about')" data-page="about">About</button></li>
     <li><button onclick="showPage('education')" data-page="education">Education</button></li>
     <li><button onclick="showPage('publications')" data-page="publications">Research</button></li>
     <li><button onclick="showPage('activities')" data-page="activities">Activities</button></li>
@@ -522,7 +523,7 @@
   </ul>
 </nav>
 
-<!-- ── HOME / ABOUT ── -->
+<!-- ── HOME ── -->
 <div id="page-home" class="page active">
   <div class="hero">
     <div class="hero-left">
@@ -540,12 +541,27 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="affil-block">
+      <p style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-15deg); font-family:'Noto Sans Devanagari',serif; font-size: clamp(5rem, 12vw, 10rem); font-weight:300; color:rgba(160,122,48,0.12); line-height:1.15; letter-spacing:0.04em; white-space:nowrap; user-select:none; pointer-events:none; text-align:center;">क्षितिज<br>सिन्हा</p>
+      <div class="affil-block" style="position:relative; z-index:1;">
         <p class="affil-name">Department of Mathematics, Indian Institute of Technology Bombay</p>
       </div>
-      <div class="about-text" style="font-size:0.95rem; margin-bottom: 2rem;">
-        <p>I am a PhD student in Mathematics at IIT Bombay. My doctoral work sits at a rich boundary between pure analysis and applied mathematics.</p>
-        <p style="margin-top:1rem;">My research focuses on <em>Homogenization Theory</em> within PDEs — specifically spectral problems in periodically perforated domains. In parallel, I work on numerical analysis via <em>Boundary Integral Equations</em>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<div id="page-about" class="page">
+  <div class="page-inner">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am a PhD student in Mathematics at the Department of Mathematics, Indian Institute of Technology Bombay. My doctoral work is situated at a rich boundary between pure analysis and applied mathematics.</p>
+        <p>My research primarily focuses on <em>Homogenization Theory</em> within Partial Differential Equations. At present, I am investigating spectral problems arising in periodically perforated domains — structures that appear naturally in composite materials, porous media, and biological tissues.</p>
+        <p>In parallel, I am engaged in the numerical analysis of these problems using <em>Boundary Integral Equations</em>, bridging the analytical and computational dimensions of the field.</p>
       </div>
       <div>
         <p class="sidebar-label">Research Interests</p>
@@ -560,8 +576,6 @@
     </div>
   </div>
 </div>
-
-<!-- ── ABOUT (removed, merged into home) ──
 
 <!-- ── EDUCATION ── -->
 <div id="page-education" class="page">
