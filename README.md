@@ -1,15 +1,7 @@
-# Personal Website
+# Kshitij Sinha — Academic Website
 
-This is my personal website built using HTML. It showcases my publications, skills, and contact information.
+I am Kshitij Sinha, PhD student in Mathematics at IIT Bombay. Welcome to my personal portfolio.
 
-## Live Website
-https://kshitijs21.github.io/
+**Research interests:** Homogenization of PDEs · Spectral Problems · Boundary Integral Equations
 
-## Features
-- Education
-- Publications
-- Teaching Experience
-- Contact info
-
-## Author
-Kshitij Sinha.
+🌐 [Visit Website](https://kshitijs21.github.io/) 
