@@ -1,6 +1,6 @@
 # Kshitij Sinha — Academic Website
 
-I am Kshitij Sinha, PhD student in Mathematics at IIT Bombay. Welcome to my personal portfolio.
+I am Kshitij Sinha, PhD student in Mathematics at IIT Bombay. Welcome to my personal webpage.
 
 **Research interests:** Homogenization of PDEs · Spectral Problems · Boundary Integral Equations
 
